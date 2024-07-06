@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>Registrartion Details</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-center" style="background-color: darkturquoise(16, 110, 120);">
+  <form id="job" method="post" class="my-10">
+    <div class="border-3 border-yellow-580 rounded-lg p-5 mx-auto w-1/2">
+      <h1 class="text-black-100 text-4xl font-bold mb-5">REGISTRATION DETAILS</h1>
+      <div class="grid grid-cols-1 gap-2">
+        <label class="text-left font-mono" for="name">Name:</label>
+        <input required type="text" id="name" name="name" class="w-60 border-3 border-yellow-580 p-2 rounded-lg"  placeholder="Enter your name">
+        <label class="text-left font-mono" for="email">Email:</label>
+    <input required type="email" id="email" name="email" class="w-60 border-3 border-yellow-580 p-2 rounded-lg" placeholder="Enter your Email id">
+
+    <label class="text-left font-mono" for="password">Password:</label>
+    <input required type="password" id="password" name="password" class="w-60 border-3 border-yellow-580 p-2 rounded-lg" placeholder="Enter valid password">
+
+    <label class="text-left font-mono" for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" class="w-60 border-3 border-yellow-580 p-2 rounded-lg" placeholder="Enter your dob">
+
+    <div class="flex items-center mt-6">
+      <input type="checkbox" name="acceptTerms" id="acceptTerms" class="mr-3">
+      <label for="acceptTerms" class="text-left">Accept Terms Conditions.</label>
+    </div>
+
+    <button required type="submit" class="mt-5 w-60 bg-gradient-to-r from-orange-580 to-yellow-490 text-white p-2 rounded-lg shadow-lg hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-400">Submit</button>
+  </div>
+</div>
+</form>
+<div class="border-3 border-blue-630 relative bg-white px-4 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-940/5 sm:mx-auto sm:rounded-lg sm:px-10">
+  <div class="mx-auto">
+    <h2 class="text-xl text-center font-bold leading-right">Entries</h2>
+    <div class="divide-y divide-gray-300/50" id="information"></div>
+  </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
